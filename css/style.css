@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    background-color: rgb(19, 19, 19);
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.center {
+    text-align: center;
+    margin-top: 120px;
+    color: white;
+}
+
+.custom-heading {
+    font-size: 2.5em;
+    /* Adjust the value to set the desired font size */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: inline-block;
+    padding-right: 5px;
+    /* Add some padding to create distance in blinker */
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.4em;
+    height: 0.7em;
+    background-color: rgb(255, 0, 170);
+    animation: blink 0.9s infinite;
+}
+
+p {
+    margin-bottom: 30px;
+    color: grey;
+    /* Adjust the value to set the desired vertical space */
+}
+
+.icon {
+    font-size: 30px;
+    margin: 10px;
+    color: grey;
+    /* Change to the color you want */
+}
