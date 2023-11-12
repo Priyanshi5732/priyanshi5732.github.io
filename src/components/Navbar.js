@@ -14,13 +14,13 @@ function Navbar() {
         <div className="hiddenLinks">
           <Link to="/About"> About </Link>
           <Link to="/Hackathons"> Hackathons </Link>
-          <Link to="/Projects"> Projects </Link>
+          <Link to="/Projects"> Projectss </Link>
         </div>
       </div>
       <div className="rightSide">
         <Link to="/About"> About </Link>
         <Link to="/Hackathons"> Hackathons </Link>
-        <Link to="/Projects"> Projects </Link>
+        <Link to="/Projects"> Projectss </Link>
       </div>
     </div>
   );
