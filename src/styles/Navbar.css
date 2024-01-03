@@ -1,60 +1,67 @@
 .navbar {
   width: 100%;
-  height: 100px;
-  background-color: rgb(19, 19, 19);
+  height: 80px;
+  background-color: rgb(31, 31, 31);
   display: flex;
   flex-direction: row;
+  color: white;
 }
 
-.navbar .leftSide {
-  flex: 50%;
-  height: 100%;
+.navbar .lefttext {
   display: flex;
   align-items: center;
-  padding-left: 150px;
+  padding-left: 200px;
 }
 
-.navbar .leftSide img {
-  width: 70px;
+.box h4::after {
+  content: """";
+  width: 10px;
+  height: 18px;
+  background: #ed5948;
+  display: inline-block;
+  margin:-2px 0px;
+  animation: cursor-blink 0.9s  infinite;
 }
 
+.box h4{
+  display: center;
+  align-items: flex;
+  gap: 3px;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 .navbar .rightSide {
-  flex: 50%;
-  height: 100%;
   display: flex;
   align-items: center;
+  margin: 0 200px;
   justify-content: center;
 }
-.tommy {
-  color: aliceblue;
-}
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin: 20px;
-}
-
-.navbar .rightSide button {
-  background-color: transparent;
-  border: none;
-  color: white;
+.rightSideitem {
   cursor: pointer;
+  list-style: none;
+  margin: 0 23px;
+  text-decoration: none;
+  color: white;
 }
 
-.navbar .rightSide svg {
-  font-size: 40px;
+.rightSideitem:hover {
+  text-decoration: underline;
 }
-
 .navbar #open {
   padding-left: 0px;
-}
-.navbar #open img {
-  display: none;
-}
-
-.navbar #close img {
-  display: inherit;
 }
 
 .navbar #open .hiddenLinks {
@@ -71,10 +78,8 @@
   margin: 5px;
 }
 
-@media only screen and (max-width: 900px) {
-  .navbar .rightSide a {
-    width: 70px;
-  }
+@media only screen and (max-width: 400px) {
+  
   .navbar .leftSide {
     padding-left: 50px;
   }
@@ -88,10 +93,6 @@
   .navbar .rightSide {
     justify-content: flex-end;
     padding-right: 50px;
-  }
-
-  .navbar .rightSide button {
-    display: inherit;
   }
 }
 

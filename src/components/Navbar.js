@@ -1,29 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import "../styles/Navbar.css";
 
-function Navbar() {
- 
+const Navbar = () => {
   return (
-    <div className="navbar">
-      <div className="leftSide">
-        <p className="tommy">
-        <div><h2>my-space</h2>
-        </div>
-        </p>
-        <div className="hiddenLinks">
-          <Link to="/About"> About </Link>
-          <Link to="/Hackathons"> Hackathons </Link>
-          <Link to="/Projects"> Projectss </Link>
-        </div>
+    <nav className="navbar">
+      <div className="lefttext">
+        <span class="box">
+          <h4>my_space </h4>
+        </span>
       </div>
       <div className="rightSide">
-        <Link to="/About"> About </Link>
-        <Link to="/Hackathons"> Hackathons </Link>
-        <Link to="/Projects"> Projectss </Link>
+        <a>
+          <Link className="rightSideitem">About</Link>
+          <Link className="rightSideitem">Hackathons</Link>
+          <Link className="rightSideitem">Projects</Link>
+        </a>
       </div>
-    </div>
+    </nav>
   );
-}
-
+};
 export default Navbar;

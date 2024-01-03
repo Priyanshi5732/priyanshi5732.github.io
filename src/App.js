@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
+  document.documentElement.style.setProperty("--bodyColor", "green");
   return (
     <div className="App">
       <Router>

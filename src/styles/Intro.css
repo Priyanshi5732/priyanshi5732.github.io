@@ -1,0 +1,43 @@
+#intro {
+  background-color: rgb(36, 36, 36);
+  color: rgba(255, 255, 255, 0.885);
+  width: 100vw;
+  height: calc(100vh - 90px);
+  display: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.myname {
+  height: 100%;
+  width: 100%;
+  margin: -220px 50px;
+  padding: 25rem;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Priyanshiverma {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote {
+  color: grey;
+  font-family: sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+.icons{
+  flex-direction: row;
+  justify-content:right;
+  display: inline;
+  padding: 0.5rem;
+  margin: 10px 85px;
+
+}
+
