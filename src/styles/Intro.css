@@ -2,7 +2,7 @@
   background-color: rgb(36, 36, 36);
   color: rgba(255, 255, 255, 0.885);
   width: 100vw;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 5rem);
   display: center;
   margin: 0 auto;
   overflow: hidden;
@@ -39,5 +39,18 @@
   padding: 0.5rem;
   margin: 10px 85px;
 
+}
+
+@media only screen and (max-width: 600px) {
+  .myname {
+    display: none;
+    justify-content: flex;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .quote {
+    
+    justify-content: flex;
+  }
 }
 
