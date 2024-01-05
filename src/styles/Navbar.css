@@ -46,14 +46,14 @@
 .navbar .rightSide {
   display: flex;
   align-items: center;
-  margin: 0 200px;
+  margin: 0 12rem;
   justify-content: center;
 }
 
 .rightSideitem {
   cursor: pointer;
   list-style: none;
-  margin: 0 23px;
+  margin: 0 1.5rem;
   text-decoration: none;
   color: white;
 }
@@ -79,30 +79,22 @@
   margin: 5px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 840px) {
   
   .navbar .leftSide {
-    padding-left: 50px;
+    padding-left: 3rem;
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .navbar .rightSide a {
+@media only screen and (max-width: 400px) {
+  .navbar .rightSideitem{
     display: none;
+    justify-content: flex;
   }
 
   .navbar .rightSide {
     justify-content: flex-end;
-    padding-right: 50px;
+    padding-right: 3rem;
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .navbar .rightSide button {
-    display: none;
-  }
-
-  .hiddenLinks {
-    display: none;
-  }
-}

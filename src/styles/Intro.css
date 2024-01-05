@@ -9,13 +9,13 @@
 }
 
 .myname {
-  height: 100%;
-  width: 100%;
-  margin: -220px 50px;
-  padding: 25rem;
+  height: 70vh;
+  width: 100vw;
   display: flex;  
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  
 }
 
 .Priyanshiverma {
@@ -23,6 +23,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .quote {
@@ -36,12 +37,11 @@
   flex-direction: row;
   justify-content:right;
   display: inline;
-  padding: 0.5rem;
-  margin: 10px 85px;
+  align-content: center;
 
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .myname {
     display: none;
     justify-content: flex;
