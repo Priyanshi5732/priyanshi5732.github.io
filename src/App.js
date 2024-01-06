@@ -7,16 +7,15 @@ import Projects from "./pages/Projects";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  document.documentElement.style.setProperty("--bodyColor", "green");
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar/>
         <Intro />
         <Routes>
-          <Route path="/About" exact component={About} />
-          <Route path="/Hackathons" exact component={Hackathons} />
-          <Route path="/Projects" exact component={Projects} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Hackathons" element={<Hackathons/>} />
+          <Route path="/Projects" element={<Projects/>} />
         </Routes>
       </Router>
     </div>
