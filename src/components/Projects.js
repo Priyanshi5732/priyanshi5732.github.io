@@ -1,9 +1,10 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import "../styles/Projects.css";
 
 export default class Projects extends Component{
     render(){
         return (
-        <div projects>Projects</div>
+        <div className='projects'>Projects</div>
         )
     }
 }
