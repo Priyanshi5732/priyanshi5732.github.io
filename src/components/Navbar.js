@@ -2,11 +2,21 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import "../styles/Navbar.css";
 import { Navbar, Nav } from "react-bootstrap";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+  useHref,
+} from "react-router-dom";
 import About from "./About";
+import CV from "./CV";
+import PDF from "../Resume.pdf";
+
 import Hackathons from "./Hackathons";
 import Projects from "./Projects";
 import Intro from "./Intro";
+import Home from "./Home";
 
 export default class Navigationbar extends Component {
   render() {
@@ -23,7 +33,7 @@ export default class Navigationbar extends Component {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="rightSide">
-              <Nav.Link as={Link} to={"/intro"}>
+              <Nav.Link as={Link} to={"/"}>
                 Home
               </Nav.Link>
               <Nav.Link as={Link} to={"/about"}>
@@ -35,12 +45,15 @@ export default class Navigationbar extends Component {
               <Nav.Link as={Link} to={"/projects"}>
                 Projects
               </Nav.Link>
+              <Nav.Link as={Link} to={PDF} target="blank">
+                Resume
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
         <div>
           <Routes>
-            <Route path="/" element={<Intro />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/hackathons" element={<Hackathons />} />
             <Route path="/projects" element={<Projects />} />
