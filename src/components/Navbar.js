@@ -10,7 +10,6 @@ import {
   useHref,
 } from "react-router-dom";
 import About from "./About";
-import CV from "./CV";
 import PDF from "../Resume.pdf";
 
 import Hackathons from "./Hackathons";
