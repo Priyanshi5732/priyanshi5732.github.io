@@ -1,19 +1,20 @@
 import "../styles/Intro.css";
 import React, { useState, useEffect } from "react";
-import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
+import cv from "./cv.json";
 
 function Intro() {
+  const { name, aboutme, skills, projects, contact } = cv;
   return (
     <section id="intro">
       <div className="myname">
         <span className="Priyanshiverma">
-          <h1>Priyanshi Verma</h1>{" "}
+          <h1>{name}</h1>{" "}
         </span>
         <p className="quote">Turning caffeine into code, one line at a time!</p>
         <div className="icons">
           <a
-            href="https://github.com/Priyanshi5732"
+            href={contact.github}
             target="_blank"
             rel="noopener"
             title="Github"
@@ -34,7 +35,7 @@ function Intro() {
           </a>
 
           <a
-            href="mailto:priyanshiverma13@outlook.com"
+            href={contact.email}
             target="_blank"
             rel="noopener"
             title="Mail"
@@ -52,7 +53,7 @@ function Intro() {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/priyanshiverma13/"
+            href={contact.linkedin}
             target="_blank"
             rel="noopener"
             title="Linkedin"
@@ -73,4 +74,5 @@ function Intro() {
     </section>
   );
 }
+
 export default Intro;
