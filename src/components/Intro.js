@@ -4,14 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import cv from "./cv.json";
 
 function Intro() {
-  const { name, aboutme, skills, projects, contact } = cv;
+  const { name, tagline, aboutme, projects, contact } = cv;
   return (
     <section id="intro">
       <div className="myname">
         <span className="Priyanshiverma">
           <h1>{name}</h1>{" "}
         </span>
-        <p className="quote">Turning caffeine into code, one line at a time!</p>
+        <p className="quote">{tagline}</p>
         <div className="icons">
           <a
             href={contact.github}
