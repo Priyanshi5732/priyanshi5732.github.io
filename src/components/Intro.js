@@ -3,9 +3,12 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import cv from "./cv.json";
 
+
 function Intro() {
   const { name, tagline, aboutme, projects, contact } = cv;
+  const now = 60;
   return (
+    
     <section id="intro">
       <div className="myname">
         <span className="Priyanshiverma">
