@@ -1,17 +1,23 @@
 import "../styles/Intro.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import cv from "./cv.json";
+import {
+  Link,
+} from "react-router-dom";
 
 
 function Intro() {
-  const { name, tagline, aboutme, projects, contact } = cv;
-  const now = 60;
+  const { name, tagline,contact } = cv;
+  const refreshPage = () => {
+    window.location.reload();
+  };
+  
   return (
     
     <section id="intro">
       <div className="myname">
-        <span className="Priyanshiverma">
+        <span className="head">
           <h1>{name}</h1>{" "}
         </span>
         <p className="quote">{tagline}</p>
@@ -19,7 +25,7 @@ function Intro() {
           <a
             href={contact.github}
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             title="Github"
             class="icon"
           >
@@ -40,7 +46,7 @@ function Intro() {
           <a
             href={contact.email}
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             title="Mail"
             class="icon"
           >
@@ -58,7 +64,7 @@ function Intro() {
           <a
             href={contact.linkedin}
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             title="Linkedin"
             class="icon"
           >
@@ -74,6 +80,10 @@ function Intro() {
           </a>
         </div>
       </div>
+    <div className="bottom">
+      <p className="footer">© 2021 &bull; <Link to="#" onClick={refreshPage} className="bottom-text" >Priyanshi Verma</Link> &bull; CC BY-NC 4.0</p>
+      <p className="footer">Hosted with <span className="heart">&#10084;</span> on <a href= {contact.visitportfolio}  target="_blank" rel="noopener noreferrer" className="bottom-text"> Github</a></p>
+    </div>
     </section>
   );
 }

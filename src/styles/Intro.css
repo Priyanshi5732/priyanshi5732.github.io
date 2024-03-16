@@ -27,7 +27,7 @@
 }
 
 .quote {
-  color: grey;
+  color: rgb(168, 168, 168);
   font-family: sans-serif;
   flex-direction: column;
   justify-content: center;
@@ -41,6 +41,20 @@
 
 }
 
+.bottom{
+  height:10vh;
+  color: grey;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-text{
+  color: grey;
+}
+.footer{
+  margin: 3px 0;
+}
 @media screen and (max-width: 480px) {
   .myname {
     display: none;
@@ -55,4 +69,5 @@
 
   }
 }
+
 

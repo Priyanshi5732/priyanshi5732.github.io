@@ -11,11 +11,11 @@ import {
 } from "react-router-dom";
 import About from "./About";
 import PDF from "../Resume.pdf";
-
 import Hackathons from "./Hackathons";
 import Projects from "./Projects";
-import Intro from "./Intro";
 import Home from "./Home";
+const unique = ">$ cd /root";
+  
 
 export default class Navigationbar extends Component {
   render() {
@@ -25,7 +25,7 @@ export default class Navigationbar extends Component {
           <Navbar.Brand href="#">
             <div className="lefttext">
               <span class="box">
-                <h4>my_space </h4>
+                <h4 className="liberation-mono-text"> {unique} </h4>
               </span>
             </div>
           </Navbar.Brand>

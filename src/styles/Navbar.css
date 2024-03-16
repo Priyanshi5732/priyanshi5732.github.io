@@ -13,6 +13,29 @@
   color: white;
 }
 
+.liberation-mono-text {
+  font-family: 'Liberation Mono', monospace;
+}
+.monaco-text {
+  font-family: 'Monaco', monospace;
+}
+.inconsolata-text {
+  font-family: 'Inconsolata', monospace;
+}
+.consolas-text {
+  font-family: 'Consolas', monospace;
+}
+
+.courier-text {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
 .box h4::after {
   content: """";
   width: 0.6rem;
