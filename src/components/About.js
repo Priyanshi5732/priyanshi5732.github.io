@@ -7,7 +7,7 @@ export default class About extends Component{
         const {Aboutme}=cv;
         return (
         <div className='about'><h1>About me</h1>
-        <span className='content'>{Aboutme}</span>
+        <div className='content'>{Aboutme}</div>
         </div>
         )
     }

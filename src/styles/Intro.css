@@ -55,19 +55,15 @@
 .footer{
   margin: 3px 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 350px) {
   .myname {
     display: none;
     justify-content: flex;
   }
-  .Priyanshiverma{
-    font-size: 5vw;
-  }
-  .quote{
-    font-size: 3vw;
+  
 
 
-  }
+  
 }
 
 
