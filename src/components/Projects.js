@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "../styles/Projects.css";
+import Bottom from "./Bottom";
 import cv from "./cv.json";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 export default class Projects extends Component {
@@ -47,7 +47,9 @@ export default class Projects extends Component {
             </Card>
           </Row>
         </div>
+        <Bottom/>
       </section>
+      
     );
   }
 }

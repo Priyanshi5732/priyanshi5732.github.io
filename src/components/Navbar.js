@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
 import "../styles/Navbar.css";
 import { Navbar, Nav } from "react-bootstrap";
 import {
@@ -11,7 +10,6 @@ import {
 } from "react-router-dom";
 import About from "./About";
 import PDF from "../Resume.pdf";
-import Hackathons from "./Hackathons";
 import Projects from "./Projects";
 import Home from "./Home";
 const unique = ">$ cd /root";
@@ -38,9 +36,6 @@ export default class Navigationbar extends Component {
               <Nav.Link as={Link} to={"/about"}>
                 About
               </Nav.Link>
-              <Nav.Link as={Link} to={"/hackathons"}>
-                Hackathons
-              </Nav.Link>
               <Nav.Link as={Link} to={"/projects"}>
                 Projects
               </Nav.Link>
@@ -54,7 +49,7 @@ export default class Navigationbar extends Component {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/hackathons" element={<Hackathons />} />
+            
             <Route path="/projects" element={<Projects />} />
           </Routes>
         </div>
