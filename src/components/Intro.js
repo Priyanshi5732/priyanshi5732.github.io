@@ -1,18 +1,12 @@
 import "../styles/Intro.css";
+import Bottom from "./Bottom";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import cv from "./cv.json";
-import {
-  Link,
-} from "react-router-dom";
 
 
 function Intro() {
   const { name, tagline,contact } = cv;
-  const refreshPage = () => {
-    window.location.reload();
-  };
-  
   return (
     
     <section id="intro">
@@ -80,10 +74,7 @@ function Intro() {
           </a>
         </div>
       </div>
-    <div className="bottom">
-      <p className="footer">© 2021 &bull; <Link to="#" onClick={refreshPage} className="bottom-text" >Priyanshi Verma</Link> &bull; CC BY-NC 4.0</p>
-      <p className="footer">Hosted with <span className="heart">&#10084;</span> on <a href= {contact.visitportfolio}  target="_blank" rel="noopener noreferrer" className="bottom-text"> Github</a></p>
-    </div>
+    <Bottom/>
     </section>
   );
 }

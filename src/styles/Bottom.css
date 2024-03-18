@@ -1,0 +1,14 @@
+.bottom-part{
+    height:10vh;
+    color: grey;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-text{
+    color: grey;
+  }
+  .footer{
+    margin: 3px 0;
+  }

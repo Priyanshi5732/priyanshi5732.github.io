@@ -1,17 +1,17 @@
 .about {
-  width: 100%;
+  padding: 20px;
   height: 90vh;
   display: flex;
   background-color: rgb(36, 36, 36);
   color: white;
   padding-top:4rem ;
   padding-left: 15%;
-  align-items:normal;
+  
 }
 
 .content{
-  padding-top:5rem ;
-  align-items:left;
+  padding-top:10rem ;
+  
   padding-left: 15%;
   
 
