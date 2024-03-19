@@ -5,6 +5,10 @@
   height: calc(100vh - 5rem);
 }
 
+.Project-footer{
+  margin:auto;
+  height: 90vh;
+}
 .cards{
   padding-top: 4rem;
   padding-left: 3rem;

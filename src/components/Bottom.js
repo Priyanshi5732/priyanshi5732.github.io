@@ -4,7 +4,7 @@ import cv from "./cv.json";
 import {
   Link,
 } from "react-router-dom";
-
+//for footer of webpage
 function Bottom(){
     const refreshPage = () => {
         window.location.reload();

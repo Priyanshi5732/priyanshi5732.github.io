@@ -41,20 +41,7 @@
 
 }
 
-.bottom{
-  height:10vh;
-  color: grey;
-  display: flex;  
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.bottom-text{
-  color: grey;
-}
-.footer{
-  margin: 3px 0;
-}
+
 @media screen and (max-width: 450px) {
   .myname {
     display: none;
