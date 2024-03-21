@@ -1,7 +1,6 @@
 .about {
-  
-  height: 90vh;
-  
+  width: 100vw;
+  min-height: 90vh;
   background-color: rgb(36, 36, 36);
   color: white;
   padding-top:4rem ;
@@ -13,6 +12,7 @@
   padding-top:1rem ;
   color:rgb(168, 168, 168);;
   margin-right: 20rem;
+  font-size:18px;
   
 
 }

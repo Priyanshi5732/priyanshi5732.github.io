@@ -2,10 +2,11 @@
   background-color: rgb(36, 36, 36);
   color: rgba(255, 255, 255, 0.885);
   width: 100%;
-  height: calc(100vh - 5rem);
+  min-height: calc(100vh - 5rem);
   display: center;
   margin: 0 auto;
   overflow: hidden;
+  padding-bottom: 100px;
 }
 
 .myname {

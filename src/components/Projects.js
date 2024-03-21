@@ -48,6 +48,7 @@ export default class Projects extends Component {
           </Row>
         </div>
         <div className="Project-footer"></div>
+        <Bottom/>
       </section>
       
     );
