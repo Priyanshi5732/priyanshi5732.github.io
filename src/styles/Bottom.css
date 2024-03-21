@@ -1,15 +1,16 @@
 .bottom-part {
   color: grey;
-  bottom: 3%;
+  bottom:0;
   left: 0;
   right: 0;
-  
+  margin-top: auto;
   text-align: center;
-  position:fixed;
+  position:absolute;
 }
 .bottom-text {
   color: grey;
 }
 .footer {
+  
   margin: 3px 0;
 }
