@@ -1,9 +1,11 @@
 .bottom-part {
   color: grey;
-  position: absolute;
-  bottom: 5%;
-  width: 100%;
+  bottom: 3%;
+  left: 0;
+  right: 0;
+  
   text-align: center;
+  position:fixed;
 }
 .bottom-text {
   color: grey;

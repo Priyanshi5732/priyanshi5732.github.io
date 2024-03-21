@@ -2,12 +2,12 @@
   background-color: rgb(36, 36, 36);
   color: rgba(255, 255, 255, 0.885);
   width: 100%;
-  height: calc(100vh - 5rem);
+  height: 100vh;
 }
 
 .Project-footer{
   margin:auto;
-  height: 90vh;
+  
 }
 .cards{
   padding-top: 4rem;
