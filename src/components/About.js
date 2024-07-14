@@ -7,13 +7,17 @@ export default class About extends Component {
   render() {
     const { Aboutme } = cv;
     return (
+      
       <section id="Aboutme">
       <div className="about">
         <h1>About me</h1>
-        <div className="content">{Aboutme}</div>
+        <div className="content"><div dangerouslySetInnerHTML={{ __html: Aboutme }} /></div>
       </div>
       <Bottom/>
       </section>
+      
+      
+      
       
     );
   }

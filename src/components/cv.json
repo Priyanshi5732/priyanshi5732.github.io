@@ -1,22 +1,20 @@
 {
   "name": "Priyanshi Verma",
   "tagline": "Turning caffeine into code, one line at a time!",
-  "Aboutme": "Welcome to my digital haven, a space where my passion for technology and creativity converge! Here, I've curated a collection of projects and collaborations that reflect my journey as a coding enthusiast and problem solver.",
+  "Aboutme": "<p>Hey there, welcome to my little corner of the web! This is where I get to show off the cool stuff I've been working on and share a bit about myself.</p> <p>I am Priyanshi Verma, a final year undergraduate with a passion for technology. My journey in tech has been an exciting mix of learning and creating. From developing web applications to exploring artificial intelligence, I love diving into the latest tech trends and applying them in innovative ways.In my free time, I enjoy reading tech blogs  and spending time in nature. If I'm indoors, you'll probably find me engrossed in a captivating fiction novel.</p><p>If you find any interest in my projects or want to have a talk, feel free to drop me a message at priyanshiverma13@outlook.com. I'm always open to discussing tech, sharing ideas, and collaborating on new ventures.</p>",
   "skills": ["HTML", "CSS", "JavaScript", "React.js"],
   "projects": [
     {
-      "id":1,
+      "id": 1,
       "title": "College-News-Scrapper",
       "description": "Used NodeJS to collect news titles from College website with monitoring and designed a RESTful API ",
       "url": "https://github.com/Priyanshi5732/News-Scrapper"
     }
-    
   ],
   "contact": {
     "email": "mailto:priyanshiverma13@outlook.com",
     "linkedin": "https://www.linkedin.com/in/priyanshiverma13/",
     "github": "https://github.com/Priyanshi5732",
-    "visitportfolio":"https://github.com/Priyanshi5732/priyanshi5732.github.io"
+    "visitportfolio": "https://github.com/Priyanshi5732/priyanshi5732.github.io"
   }
-  
 }

@@ -1,8 +1,9 @@
 import "./App.css";
-import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
 import React, { Component } from "react";
-document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0');
+document
+  .querySelector('meta[name="viewport"]')
+  .setAttribute("content", "width=device-width, initial-scale=1.0");
 
 class App extends Component {
   render() {

@@ -73,24 +73,18 @@
 .rightSideitem:hover {
   text-decoration: underline;
 }
-.navbar #open {
-  padding-left: 5px;
-}
 
-.navbar #open .hiddenLinks {
-  display: inherit;
-  margin-left: 20px;
+@media (max-width: 767px) {
+  /* Adjust navbar collapse behavior */
+  .navbarScroll {
+    position: absolute;
+    top: 50px; /* Adjust as per your design */
+    left: 0;
+    z-index: 1000; /* Ensure it appears above other content */
+    width: 100%; /* Change as per your design */
+    
+  }
 }
-
-.navbar #close .hiddenLinks {
-  display: none;
-}
-
-.navbar #open a {
-  width: 70px;
-  margin: 5px;
-}
-
 @media only screen and (max-width: 840px) {
   
   .navbar .leftSide {

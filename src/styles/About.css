@@ -1,6 +1,10 @@
+.fullpage{
+  min-height:auto;
+}
+
 .about {
   width: 100vw;
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: rgb(36, 36, 36);
   color: white;
   padding-top:4rem ;
@@ -16,3 +20,4 @@
   
 
 }
+
