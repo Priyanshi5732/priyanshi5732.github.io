@@ -3,7 +3,6 @@ import "../styles/Navbar.css";
 import { Navbar, Nav } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import About from "./About";
-import PDF from "../Resume.pdf";
 import Projects from "./Projects";
 import Home from "./Home";
 const unique = ">$ cd /root";
@@ -32,9 +31,7 @@ export default class Navigationbar extends Component {
               <Nav.Link as={Link} to={"/projects"}>
                 Projects
               </Nav.Link>
-              <Nav.Link as={Link} to={PDF} target="blank">
-                Resume
-              </Nav.Link>
+              
             </Nav>
           </Navbar.Collapse>
         </Navbar>
