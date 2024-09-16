@@ -7,43 +7,31 @@ import Projects from "./Projects";
 import Home from "./Home";
 const unique = ">$ cd /root";
 
-export default class Navigationbar extends Component {
-  render() {
-    return (
-      <Router>
-        <Navbar expand="lg" variant={"dark"} className="Navbar">
-          <Navbar.Brand href="#">
-            <div className="lefttext">
-              <span class="box">
-                <h4 className="liberation-mono-text"> {unique} </h4>
-              </span>
-            </div>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="rightSide">
-              <Nav.Link as={Link} to={"/"}>
-                Home
-              </Nav.Link>
-              <Nav.Link as={Link} to={"/about"}>
-                About
-              </Nav.Link>
-              <Nav.Link as={Link} to={"/projects"}>
-                Projects
-              </Nav.Link>
-              
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-        <div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+function Header() {
+  const handleHomeClick = () => {
+    window.location.reload();
+  };
 
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
+  return (
+    <Navbar expand="lg" variant={"dark"} className="Navbar">
+      <Navbar.Brand href="#">
+        <div className="lefttext">
+          <span class="box">
+            <h4 className="liberation-mono-text"> {unique} </h4>
+          </span>
         </div>
-      </Router>
-    );
-  }
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="rightSide">
+          <Nav.Link href="/Home" onClick={handleHomeClick}>Home</Nav.Link>
+          <Nav.Link href="about">About</Nav.Link>
+          <Nav.Link href="projects">Projects</Nav.Link>
+
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+
 }
+export default Header;

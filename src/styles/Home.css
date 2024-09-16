@@ -2,7 +2,7 @@
   background-color: rgb(36, 36, 36);
   color: rgba(255, 255, 255, 0.885);
   width: 100%;
-  min-height: calc(100vh - 5rem);
+  height: 100vh;
   display: center;
   margin: 0 auto;
   overflow: hidden;
