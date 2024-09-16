@@ -44,15 +44,12 @@
 
 
 @media screen and (max-width: 450px) {
-  .myname {
-    display: none;
-    justify-content: flex;
-  }
+  
   .Priyanshiverma{
     font-size: 3vw;
   }
   .quote{
-    font-size: 1vw;
+    font-size: 3vw;
 
 
   }

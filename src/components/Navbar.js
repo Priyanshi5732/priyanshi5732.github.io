@@ -1,10 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import "../styles/Navbar.css";
 import { Navbar, Nav } from "react-bootstrap";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import About from "./About";
-import Projects from "./Projects";
-import Home from "./Home";
 const unique = ">$ cd /root";
 
 function Header() {
