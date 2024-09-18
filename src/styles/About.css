@@ -1,10 +1,8 @@
-.fullpage{
-  min-height:auto;
-}
+
 
 .about {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background-color: rgb(36, 36, 36);
   color: white;
   padding-top:4rem ;
@@ -17,7 +15,38 @@
   color:rgb(168, 168, 168);;
   margin-right: 20rem;
   font-size:18px;
-  
+  flex: 1
 
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Takes the full height of the viewport */
+}
+
+/* The content will grow to fill the space, pushing the footer to the bottom */
+.content {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem 5%; /* Reduce padding for smaller screens */
+  }
+
+  .content {
+    margin-right: 0; /* Remove large margin on smaller screens */
+    font-size: 16px; /* Slightly smaller font for readability */
+  }
+}
+
+/* For very small devices (e.g., phones) */
+@media (max-width: 480px) {
+  .about {
+    padding: 2rem 2%; /* Further reduce padding for small devices */
+  }
+
+  .content {
+    font-size: 14px; /* Smaller font for very small screens */
+  }
 }
 

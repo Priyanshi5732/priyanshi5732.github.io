@@ -5,6 +5,7 @@ import cv from "./cv.json";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
+import Navbar from "./Navbar";
 
 export default class Projects extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class Projects extends Component {
     const now = 60;
     return (
       <section id="project-section">
+        <Navbar/>
         <div className="cards">
           <Row xs={5} md={2} className="g-2">
             <Card style={{ width: "17rem" }}>
@@ -47,8 +49,8 @@ export default class Projects extends Component {
             </Card>
           </Row>
         </div>
-        <div className="Project-footer"></div>
-        <Bottom/>
+        <div className="Project-footer"><Bottom/></div>
+        
       </section>
       
     );
